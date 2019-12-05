@@ -1,0 +1,25 @@
+server:
+  port: 9528
+
+spring:
+  rabbitmq:
+    username: admin2
+    password: yckj2017
+    host: 120.76.240.252
+    port: 5672
+    virtual-host: /test
+    listener:
+      simple:
+        acknowledge-mode: manual #开启ask手动确认
+       # retry:
+       #   enabled: true #是否开启消费者重试（为false时关闭消费者重试，这时消费端代码异常会一直重复收到消息）
+       #   max-attempts: 3 #最大重试次数
+        #  initial-interval: 3000 #重试间隔时间（单位毫秒）
+
+    publisher-confirms: true  # 开启发布者发送确认
+    publisher-returns: true # 开启发布者发送失败退回
+
+
+
+
+
