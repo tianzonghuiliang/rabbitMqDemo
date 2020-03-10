@@ -4,8 +4,8 @@ server:
 spring:
   rabbitmq:
     username: admin
-    password: yckj2017
-    host: 120.76.240.252
+    password: 123456
+    host: localhost
     port: 5672
     virtual-host: /
     listener:
