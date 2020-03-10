@@ -2,6 +2,8 @@ package com.rabbitmq.entity;
 
 import lombok.Data;
 
+import java.util.Date;
+
 /**
  * Created by star on 2019/11/15.
  */
@@ -14,4 +16,10 @@ public class MessageInfo {
     private String msg;
 
     private int count;
+
+    private Date sendTime;
+
+    private long time;
+
+    private Date receiveTime;
 }

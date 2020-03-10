@@ -86,11 +86,9 @@ public class DelayMqConfig {
 //        params.put("x-overflow","reject-publish" );
         // x-deal-letter-exchange 声明了队列里的死信转发到的DLX名称，
         // x-deal-letter-routing-key 声明了这些死信在转发时携带的 routing-key 名称。
-        params.put("x-message-ttl", 30000);
+        params.put("x-message-ttl", 3000);
         params.put("x-dead-letter-exchange", DEAL_EXCHANGE);
         params.put("x-dead-letter-routing-key", DEAL_ROUTING_KEY);
-//        params.put("x-dead-letter-exchange",DEAL_EXCHANGE);
-//        params.put("x-dead-letter-routing-key",DEAL_ROUTING_KEY);
         return new Queue(DELAY_QUEUE, true, false, false, params);
     }
 

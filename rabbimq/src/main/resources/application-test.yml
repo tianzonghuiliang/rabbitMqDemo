@@ -3,11 +3,11 @@ server:
 
 spring:
   rabbitmq:
-    username: admin2
+    username: admin
     password: yckj2017
     host: 120.76.240.252
     port: 5672
-    virtual-host: /test
+    virtual-host: /
     listener:
       simple:
         acknowledge-mode: manual #开启ask手动确认

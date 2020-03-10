@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -27,24 +28,15 @@ public class Producter {
       public String test(@RequestBody MessageInfo msgInfo){
           String id = SnowIDUtil.getId();
           String requestId = SnowIDUtil.getId();
-         for(int i = 0; i<2; i++) {
-             int finalI = i;
-
-             executorService.execute(()->{
-
-                msgInfo.setId(id);
-                //加锁
-                  Boolean flag = RedisLock.lock(id,requestId);
-                System.out.println("id="+id+"---"+ finalI+"flag=="+flag+"----requestId="+requestId);
-                 if(flag) {
-                     rabbitMqUtils.send(msgInfo);
-                     //解锁
-                     RedisLock.unLock(id,requestId);
-                 }
-             });
-         }
-
-
-          return "1";
+          msgInfo.setId(id);
+          msgInfo.setSendTime(new Date());
+          //加锁
+          Boolean flag = RedisLock.lock(id,requestId);
+          if(flag) {
+              rabbitMqUtils.send(msgInfo);
+              //解锁
+              RedisLock.unLock(id,requestId);
+          }
+          return "ok";
       }
 }

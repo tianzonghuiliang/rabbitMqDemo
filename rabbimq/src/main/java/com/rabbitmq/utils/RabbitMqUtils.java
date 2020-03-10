@@ -79,7 +79,7 @@ public class RabbitMqUtils {
         MessagePostProcessor processor = new MessagePostProcessor(){
             @Override
             public Message postProcessMessage(Message message) throws AmqpException {
-               // message.getMessageProperties().setExpiration(30*1000 + "");
+               // message.getMessageProperties().setExpiration(msgInfo.getTime() + "");
                 return message;
             }
         };
