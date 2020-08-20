@@ -67,7 +67,7 @@ public class DelayMqConfig {
 
 
 
-    /**
+    /**修改
      * 延迟队列配置
      * <p>
      * 1、params.put("x-message-ttl", 5 * 1000);
