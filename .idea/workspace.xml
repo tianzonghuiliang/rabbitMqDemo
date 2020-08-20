@@ -46,6 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1597888803903</updated>
       <workItem from="1597888805148" duration="2062000" />
+      <workItem from="1597893574756" duration="158000" />
     </task>
     <task id="LOCAL-00001" summary="dev">
       <created>1597893108612</created>
@@ -61,7 +62,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597893260857</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1">
+      <created>1597893631711</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597893631711</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -69,17 +77,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="dev" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="540" y="96" key="CommitChangelistDialog2" timestamp="1597893260159">
+    <state x="540" y="96" key="CommitChangelistDialog2" timestamp="1597893627389">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="540" y="96" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597893260159" />
+    <state x="540" y="96" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597893627389" />
     <state x="184" y="86" key="DiffContextDialog" timestamp="1597892998762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597892998762" />
+    <state x="184" y="86" key="MergeDialog" timestamp="1597893725633">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597893725633" />
+    <state x="595" y="280" key="MultipleFileMergeDialog" timestamp="1597893725639">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="595" y="280" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597893725639" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1597893275459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -88,6 +105,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="678" y="253" key="VcsDiffUtil.ChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597892853669" />
+    <state x="754" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597893599692">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="754" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597893599692" />
     <state x="790" y="310" key="svn.repositoryBrowser" timestamp="1597893427253">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
